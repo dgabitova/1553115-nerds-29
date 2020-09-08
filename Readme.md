@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Дина Габитова](https://up.htmlacademy.ru/htmlcss/29/user/1553115).
-* Наставник: [Михаил Воробьев] (https://htmlacademy.ru/profile/dontliem1).
+* Наставник: [Михаил Воробьев](https://htmlacademy.ru/profile/dontliem1).
 
 ---
 
