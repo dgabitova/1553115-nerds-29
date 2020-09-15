@@ -1,0 +1,252 @@
+/* Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-gray: #EEEEEE;
+    --basic-extra-gray: #444444;
+    --basic-light-gray: #888888;
+    --basic-dark: #283136;
+    --basic-neutral: #666666;
+    --basic-extra-light: #E1E1E1;
+    --basic-white: #ffffff;
+    --basic-green: #00CA74;
+    --basic-green-dark: #00BC6C;
+    --basic-green-darken: #00AA62;
+    --basic-coral: #FB565A;
+    --basic-coral-dark: #E74246;
+    --basic-coral-darken: #D7373B;
+    --basic-yellow: #EFC849;
+    --basic-yellow-dark: #EAB534;
+    --basic-yellow-darken: #E5A722;
+  
+  }
+
+  /* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: var(--basic-dark);
+    text-transform: none;
+    background-color: var(--basic-white);
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Main navigation */
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--basic-black);
+    background-color: transparent;
+    text-transform: uppercase;
+  }
+  
+  .main-navigation-wrapper {
+    background-color: var(--basic-gray);
+  }
+
+  .site-navigation {
+    list-style: none;
+  }
+
+  .site-navigation-current a:not([href]) {
+    background-color: var(--basic-gray);
+  }
+  
+  .container-title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--basic-black);
+  }
+  
+  .container-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--basic-dark);
+  }
+  /* Services*/
+
+  .services-list {
+    list-style: none;
+  }
+  
+  .services-caption {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+  }
+  
+  .services-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-dark);
+  }
+
+  /* About*/ 
+
+  .about {
+    background-color: var(--basic-white);
+  }
+  
+  .about-header {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--basic-black);
+  }
+  
+  .about-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--basic-dark);
+  }
+  
+  .about-list {
+    margin: 0;
+    padding: 0;
+  
+    color: var(--basic-dark);
+    list-style: none;
+  }
+  
+  .about-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .about-features {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+  }
+  .about-besties{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--basic-dark);
+  }
+  
+  
+/* Button */
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-coral);
+    border: none;
+  }
+
+.button:hover {
+  background-color: var(--basic-coral-dark);
+  }
+
+.button:active {
+  color: var(--basic-white);
+  background-color: var(--basic-coral-darken);
+}
+
+.button--green {
+  background-color: var(--basic-green);
+}
+.button--green:hover {
+  background-color: var(--basic-green-dark);
+}
+.button--green:active {
+background-color: var(--basic-green-darken);
+}
+
+.button--yellow {
+  background-color: var(--basic-yellow);
+}
+.button--yellow::hover {
+  background-color: var(--basic-yellow-dark);
+}
+.button--yellow:active {
+background-color: var(--basic-yellow-darken);
+}
+
+/* Main footer */
+
+.main-footer {
+    color: var(--basic-neutral);
+    background-color: var(--basic-white);
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+
+  .contacts-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+  }
+
+  .contacts-address {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    color: var(--basic-neutral);
+  }
+
+  .footer-contacts a {
+    color: var(--basic-neutral);
+    text-decoration: none;
+  }
+  
+  .footer-contacts a:hover,
+  .footer-contacts a:focus {
+    text-decoration: none;
+  }
+
+  .footer-social {
+    text-align: center;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+  }
+  
+  .footer-social h2 {
+    font-size: 14px;
+  
+  }
+  
+  /* Social button */
+  
+  .social-button {
+    color: inherit;
+  }
+  
+  .social-button:hover,
+  .social-button:focus {
+    background-color: var(--basic-white);
+  }
