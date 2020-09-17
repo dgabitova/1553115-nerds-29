@@ -5,6 +5,7 @@
     --basic-gray: #EEEEEE;
     --basic-extra-gray: #444444;
     --basic-light-gray: #888888;
+    --basic-super-light: #DFDFDF;
     --basic-dark: #283136;
     --basic-neutral: #666666;
     --basic-extra-light: #E1E1E1;
@@ -46,6 +47,7 @@ body {
     max-width: 100%;
     height: auto;
   }
+
 
   /* Main navigation */
 
@@ -190,6 +192,73 @@ background-color: var(--basic-green-darken);
 }
 .button--yellow:active {
 background-color: var(--basic-yellow-darken);
+}
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: var(--basic-gray);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+} 
+
+.catalog-category {
+  text-transform: uppercase;
+} 
+
+.catalog-item-price b {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+.catalog-item-price .button {
+  line-height: 50px;
+  color: var(--basic-coral);
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: var(--basic-super-light);
+} 
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background: rgba(0, 0, 0, 0.0001);
 }
 
 /* Main footer */

@@ -7,29 +7,30 @@
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
-  <body>
-  <header>
-      <nav>
-        <a href="index.html">
+  <body class="page-body inner-page"></body>
+    <header class="main-header">
+      <nav class="main-navigation container">
+        <a class="main-header-logo" href="index.html">
           <img src="https://via.placeholder.com/160x65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="site-navigation">
+          <li class="navigation-item"><a href="">Студия</a></li>
+          <li class="navigation-item"><a href="">Клиенты</a></li>
+          <li class="navigation-item"><a href="catalog.html">Магазин</a></li>
+          <li class="navigation-item"><a href="">Контакты</a></li>
         </ul>
-        <a href="">Корзина</a>
+        <a class="cart" href="">Корзина</a>
       </nav>
-  </header>
-  <main>
-      <h1>Магазин готовых шаблонов</h1>
-      <section>
-        <h2>Фильтр товаров</h2>
+    </header>
+  <main class="page-catalog container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Сортировка шаблонов</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма фильтра -->
       </section>
       <section>
-        <h2>Сортировка шаблонов</h2>
+        <h2 class="visually-hidden">Сортировка шаблонов</h2>
         <ul>
             <li>По цене</li>
             <li>По типу</li>
@@ -40,110 +41,110 @@
             <li>По возростанию</li>
         </ul>
       </section>
-     <section>
-        <h2>Примеры работ</h2>
-        <ul>
-          <li>
+     <section class="catalog">
+        <h2 class="visually-hidden">Примеры работ</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <a href="">
-              <h3>Седона</h3>
-              <p>
+              <h3 class="catalog-category">Седона</h3>
+              <p class="catalog-item-image">
                 <img src="https://via.placeholder.com/360x580" alt="Седона">
               </p>
             </a>
             <p>
               Информационный сайт для туристов
-              <button type="button">9990 руб.</button>
+              <button type="button" class="button">9990 руб.</button>
             </p>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>Pink</h3>
-              <p>
+              <h3 class="catalog-category">Pink</h3>
+              <p class="catalog-item-image">
                 <img src="https://via.placeholder.com/360x580" alt="Pink">
               </p>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>Барбершоп «Бородинский»</h3>
-              <p>
+              <h3 class="catalog-category">Барбершоп «Бородинский»</h3>
+              <p class="catalog-item-image">
                 <img src="https://via.placeholder.com/360x580" alt="Барбершоп «Бородинский»">
               </p>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>Mishka</h3>
-              <p>
+              <h3 class="catalog-category">Mishka</h3>
+              <p class="catalog-item-image">
                 <img src="https://via.placeholder.com/360x580" alt="Mishka">
               </p>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>Обучение</h3>
-              <p>
+              <h3 class="catalog-category">Обучение</h3>
+              <p class="catalog-item-image">
                 <img src="https://via.placeholder.com/360x580" alt="Обучение">
               </p>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
-              <h3>Квас</h3>
-              <p>
+              <h3 class="catalog-category">Квас</h3>
+              <p class="catalog-item-image">
                 <img src="https://via.placeholder.com/360x580" alt="Квас">
               </p>
             </a>
           </li>
         </ul>
-        <ul>
-            <li>
+        <ul class="pagination-list">
+            <li class="pagination-item">
               <a>1</a>
             </li>
-            <li>
+            <li class="pagination-item">
               <a href="">2</a>
             </li>
-            <li>
+            <li class="pagination-item">
               <a href="">3</a>
             </li>
-            <li>
+            <li class="pagination-item">
               <a href="">СЛЕДУЮЩАЯ</a>
             </li>
           </ul>
       </section>
       </main>
-      <footer>
-        <section>
-          <h2>Как нас найти</h2>
+      <footer class="page-footer main-footer">
+        <section class="footer-contacts">
+          <h2  class="visually-hidden">Как нас найти</h2>
           <img src="https://via.placeholder.com/1440x416" alt="карта">
-          <p>NЁRDS DESIGN STUDIO</p>
-          <p>191186, Санкт-Петербург,<br>
+          <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
+          <p class="contacts-address">191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8<br>
-            тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-            <a href="">Напишите нам</a>
+            тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a><br>
+            <a class="button" href="">Напишите нам</a>
           </p>
         </section>
-        <section>
+        <section class="footer-social">
           <h2>Давайте дружить, это выгодно!</h2>
           <ul>
             <li>
-              <a href="">Вконтакте</a>
+              <a class="social-button" href="">Вконтакте</a>
             </li>
             <li>
-              <a href="">Фейсбук</a>
+              <a class="social-button" href="">Фейсбук</a>
             </li>
             <li>
-              <a href="">Инстаграм</a>
+              <a class="social-button" href="">Инстаграм</a>
             </li>
           </ul>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
       </footer>
     
-      <section>
+      <section class="modal modal-map">
         <h2>Как нас найти</h2>
         <!-- Здесь будет карта -->
-        <button type="button">Закрыть</button>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     
     </body>
