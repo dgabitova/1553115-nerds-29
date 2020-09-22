@@ -48,6 +48,11 @@ body {
     height: auto;
   }
 
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+  }
+
   /* Grid */
 
 .page {
@@ -65,6 +70,7 @@ body {
 
 .main-header {
   margin-bottom: 70px;
+  background-color: var(--basic-gray);
 }
 
 .main-header-logo {
@@ -141,7 +147,7 @@ background-color: var(--basic-gray);
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     padding: 0;
-    column-gap: 20px;
+    column-gap: 40px;
     list-style: none;
   }
   
@@ -215,11 +221,11 @@ background-color: var(--basic-gray);
   }
   
  /* Clients*/ 
- .clients {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+ .clients ul {
+   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
    margin-top: 100px;
-   width: 1160px;
  }
  
  
