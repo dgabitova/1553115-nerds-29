@@ -59,12 +59,27 @@ body {
   height: 100%;
 }
 
+
 .page-body {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
+
+/* Grid for pages */
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-content: start;
+}
+
+.page-catalog .page-title {
+  grid-column: 1 / -1;
+}
+
+
 
 /* Main header */
 
@@ -273,9 +288,17 @@ background-color: var(--basic-yellow-darken);
 .page-title {
   font-size: 55px;
   line-height: 55px;
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+  text-align: center;
 }
 
 /* Catalog */
+
+.catalog {
+  margin-left: 60px;
+}
 
 .catalog-list {
   list-style: none;
@@ -284,6 +307,7 @@ background-color: var(--basic-yellow-darken);
 .catalog-item {
   background-color: var(--basic-gray);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  max-width: 300px;
 }
 
 .catalog-item a {
@@ -311,15 +335,46 @@ background-color: var(--basic-yellow-darken);
   color: var(--basic-coral);
 }
 
+/* Filters */
+
+.filters {
+
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
 /* Pagination */
 
+.pagination-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: ". pg pg";
+}
+
+.pagination {
+  padding-bottom: 60px;
+  grid-area: pg;
+}
+
 .pagination-list {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item a {
   color: var(--basic-black);
   background-color: var(--basic-gray);
+  margin-right: 11px;
 }
 
 .pagination-item a:hover,
