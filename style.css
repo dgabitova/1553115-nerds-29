@@ -110,25 +110,31 @@ background-color: var(--basic-gray);
 /* Container */
 
 .container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
+width: 1160px;
+margin: 0 auto;
+padding: 0 10px;
 }
 
 .main-header-bar {
   background-color: var(--basic-gray);
 }
 
-  .main-navigation-wrapper {
-    background-color: var(--basic-gray);
-    display: grid;
-    grid-template-columns: 1fr min-content; 
-    width: 1160px;
-    margin: 0 auto;
-    padding: 0 10px;
+.main-navigation-wrapper {
+  background-color: var(--basic-gray);
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  }
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
   }
 
   .site-navigation {
+    width: 437px;
+    margin: 0;
+    padding: 0;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -151,6 +157,31 @@ background-color: var(--basic-gray);
     line-height: 24px;
     color: var(--basic-dark);
   }
+
+    /* User navigation */
+
+.user-navigation {
+  max-width: 140px;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--basic-coral);
+}
+
+/* Login link */
+
+.user-navigation .cart {
+  padding-left: 50px;
+}
+
   /* Services*/
 
   .services {
@@ -183,14 +214,21 @@ background-color: var(--basic-gray);
   }
 
   .index-columns {
-  display: grid;
-  grid-template-columns: 1fr min-content;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  }
+
+  .index-columns h2 {
+    margin: 0;
+    margin-bottom: 32px;
   }
 
   /* About*/ 
 
   .about {
     background-color: var(--basic-white);
+    width: 760px;
   }
   
   .about-header {
@@ -205,6 +243,7 @@ background-color: var(--basic-gray);
     font-weight: 400;
     line-height: 24px;
     color: var(--basic-dark);
+    margin-bottom: 60px;
   }
   
   .about-list {
@@ -219,6 +258,8 @@ background-color: var(--basic-gray);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
   
   .about-features {
@@ -247,6 +288,8 @@ background-color: var(--basic-gray);
 /* Button */
 
 .button {
+    display: inline-block;
+    margin-right: 16px;
     font: inherit;
     text-align: center;
     color: var(--basic-white);
