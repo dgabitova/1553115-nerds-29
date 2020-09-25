@@ -95,7 +95,9 @@ body {
   /* Main navigation */
 
 .main-navigation {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 16px;
     line-height: 30px;
     color: var(--basic-black);
@@ -107,12 +109,14 @@ body {
 background-color: var(--basic-gray);
 }
 
+
+
 /* Container */
 
 .container {
 width: 1160px;
 margin: 0 auto;
-padding: 0 10px;
+padding: 49px 10px;
 }
 
 .main-header-bar {
@@ -132,7 +136,9 @@ padding: 0 10px;
   }
 
   .site-navigation {
-    width: 437px;
+    display: inline-grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 45px;
     margin: 0;
     padding: 0;
     list-style: none;
