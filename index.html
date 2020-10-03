@@ -189,9 +189,24 @@
   </footer>
 
   <section class="modal modal-order">
-    <h2>Заказ услуги</h2>
-    <!-- Здесь будет форма заказа -->
-    <button class="modal-close" type="button">Закрыть</button>
+    <h2 class="visually-hidden">Заказ услуги</h2>
+      <form class="contacts_popup_form">
+        <p class="contacts_popup_title">Напишите нам</p>
+        <label class="contacts_popup_input_name">
+          <span class="contacts_popup_name_title">Ваше имя:</span>
+          <input class="contacts_popup_name_title" type="text" placeholder="Имя Фамилия">
+        </label>
+        <label class="contacts_popup_input_email">
+          <span class="contacts_popup_email_title">Ваш e-mail:</span>
+          <input class="contacts_popup_email" type="email" placeholder="email@example.com">
+        </label>
+        <label class="contacts_popup_input_textarea">
+          <span class="contacts_popup_textarea_title">Текст письма:</span>
+          <textarea class="contacts_popup_textarea">Напишите текст</textarea>
+        </label>
+        <button class="contacts_popup_button button" type="submit">Отправить</button>
+        <button class="contacts_popup_button_close" id="close_popup" type="button" ></button>
+      </form>
   </section>
 
   <section class="modal modal-map">

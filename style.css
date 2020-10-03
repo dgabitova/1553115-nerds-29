@@ -20,7 +20,11 @@
     --basic-yellow: #EFC849;
     --basic-yellow-dark: #EAB534;
     --basic-yellow-darken: #E5A722;
-  
+    --basik-dark-gray: #b4b9bb;
+    --pagination-border: #DBDBDB;
+    --popup-form-border: #D7DCDE;
+    --popup-form-border-hover: #B4B9BB;
+    --popup-form-border-invalid: #E74246;
   }
 
   /* Global */
@@ -640,6 +644,7 @@ background-color: var(--basic-yellow-darken);
     height: 81px;
     background-color: var(--basic-extra-light);
     color: inherit;
+    border-radius: 50%;
     }
   
   .social-button:hover,
@@ -649,4 +654,149 @@ background-color: var(--basic-yellow-darken);
 
   .social-button:active {
     background-color: var(--basic-coral-dark);
+  }
+
+/* Pop Up */
+
+  .contacts_popup {
+    position: absolute;
+    bottom: -455px;
+    left: 120px;
+    z-index: 3;
+  
+    display: none;
+  
+    padding-left: 100px;
+  
+    min-height: 590px;
+    width: 960px;
+    background-color: var(--basic-white);
+    
+  }
+  
+  .contacts_popup.current {
+    display: block;
+  }
+  
+  .contacts_popup_form {
+    display: grid;
+  
+    grid-template-areas: "contacts_popup_title contacts_popup_button_close"
+    "contacts_popup_input_name contacts_popup_input_email"
+    "contacts_popup_input_textarea contacts_popup_input_textarea"
+    "contacts_popup_button .";
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+    padding-top: 63px;
+    min-height: 353px;
+    width: 761px;
+    column-gap: 40px;
+  }
+  .contacts_popup_title {
+    grid-area: contacts_popup_title;
+    margin: 0;
+    margin-bottom: 50px;
+    padding-top: 13px;
+    font-weight: 700;
+    font-size: 45px;
+  }
+  .contacts_popup_button_close {
+    position: relative;
+    top: 13px;
+    right: -9px;
+    grid-area: contacts_popup_button_close;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background-image: url("img/button-close.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    justify-self: end;
+  }
+  .contacts_popup_button_close:hover {
+    opacity: 1;
+  }
+  .contacts_popup_button_close:active {
+    opacity: 0.1;
+  }
+  .contacts_popup_input_name {
+    display: flex;
+    grid-area: contacts_popup_input_name;
+    flex-direction: column;
+    margin-bottom: 31px;
+    font-weight: 700;
+    width: 360px;
+    height: 50px;
+  }
+  .contacts_popup_input_email {
+    display: flex;
+    grid-area: contacts_popup_input_email;
+    flex-direction: column;
+    font-weight: 700;
+    width: 360px;
+    height: 50px;
+  }
+  .contacts_popup_input_textarea {
+    display: flex;
+    grid-area: contacts_popup_input_textarea;
+    flex-direction: column;
+    margin-bottom: 49px;
+    font-weight: 700;
+    width: 360px;
+    height: 50px;
+  }
+  .contacts_popup_name,
+  .contacts_popup_email,
+  .contacts_popup_textarea {
+    border: 2px solid var(--popup-form-border);
+    border-radius: 3px;
+    background: var(--basic-white);
+    color: var(--basic-dark-gray);
+    opacity: 0.5;
+  }
+  .contacts_popup_name:hover,
+  .contacts_popup_email:hover,
+  .contacts_popup_textarea:hover {
+    border-color: var(--popup-form-border-hover);
+  }
+  .contacts_popup_name:focus,
+  .contacts_popup_email:focus,
+  .contacts_popup_textarea:focus {
+    border-color: var(--popup-form-border-hover);
+    opacity: 1;
+  }
+  .contacts_popup_name:invalid,
+  .contacts_popup_email:invalid,
+  .contacts_popup_textarea:invalid {
+    border-color: var(--popup-form-border-invalid);
+  }
+  .contacts_popup_textarea {
+    padding: 16px;
+    width: 360px;
+    height: 50px;
+    resize: none;
+  }
+  .contacts_popup_button {
+    grid-area: contacts_popup_button;
+  }
+  .contacts_popup_name,
+  .contacts_popup_email {
+    padding: 16px;
+    width: 360px;
+    height: 50px;
+  }
+  .contacts_popup_name_title,
+  .contacts_popup_email_title,
+  .contacts_popup_textarea_title {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .contacts_popup_button {
+    width: 259px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--basic-coral-dark);
+    color: var(--basic-white);
+    text-transform: uppercase;
   }
