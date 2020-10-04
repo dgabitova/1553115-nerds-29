@@ -434,8 +434,9 @@ position: relative;
   opacity: 1;
 }
 
- .cliens-item:active {
-  opacity: 0.1;
+ .cliens-item:active,
+ .cliens-item:focus {
+  opacity: 0.2;
  }
  
 /* Button */
@@ -451,6 +452,7 @@ position: relative;
     text-transform: uppercase;
     background-color: var(--basic-coral);
     border: none;
+    border-radius: 3px;
   }
 
 .button:hover {
@@ -513,6 +515,11 @@ background-color: var(--basic-yellow-darken);
 
 .slider-controls .current::before {
   border-color: #c1c1c1;
+}
+
+.button .slide-button {
+width: 240px;
+
 }
 
 .page-title {
@@ -662,7 +669,7 @@ background-color: var(--basic-yellow-darken);
     line-height: 30px;
     color: var(--basic-black);
     text-transform: uppercase;
-    padding-bottom: 22px;  
+    padding: 49px 76px 11px 50px;  
   }
 
   .contacts-address {
@@ -671,7 +678,7 @@ background-color: var(--basic-yellow-darken);
     font-style: normal;
     line-height: 18px;
     color: var(--basic-neutral);
-    padding-bottom: 37px;
+    padding: 11px 39px 134px 50px;  
   }
 
   .footer-contacts {
@@ -679,7 +686,7 @@ background-color: var(--basic-yellow-darken);
     overflow: hidden; 
     padding-top: 54px;
     padding-bottom: 54px;
-
+    
   }
 
 
@@ -692,15 +699,33 @@ background-color: var(--basic-yellow-darken);
 
   .contact-us {
     background: #ffffff;
-    padding: 50px;
+    width: 319px;
+    height: 308px;
   }
 
-  .footer-contacts a {
+  .footer-phone {
     color: var(--basic-neutral);
-    text-decoration: none;
+    text-decoration: uppercase;
     margin-top: 37px;
+    margin-left: 3px;
+    border-radius: 3px;
   }
   
+  .footer-button {
+    color: var(--basic-white);
+    text-decoration: uppercase;
+    margin-top: 37px;
+    margin-left: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--basic-coral);
+    border: none;
+    margin-bottom: 62px;
+  }
+
   .footer-contacts a:hover,
   .footer-contacts a:focus {
     text-decoration: none;
@@ -709,7 +734,8 @@ background-color: var(--basic-yellow-darken);
   .footer-social {
     text-align: left;
     justify-self: center;
-
+    padding: 68px 0 74px 0px;
+    margin-left: -45px;
 }
   
   .footer-social ul {
@@ -717,6 +743,7 @@ background-color: var(--basic-yellow-darken);
     flex-wrap: wrap;
     justify-content: space-between;  
     list-style: none;
+    
   }
   
   .footer-social h2 {
@@ -727,6 +754,15 @@ background-color: var(--basic-yellow-darken);
   .sale h2 {
     font-size: 36px; 
     color: var(--basic-black);
+    padding: 75px 0 5px 0px;
+    margin-left: -20px;
+  }
+
+  .sale p {
+    font-size: 16px; 
+    color: #444444;
+    padding: 5px 0 74px 0;
+    margin-left: -20px;
   }
   
   
