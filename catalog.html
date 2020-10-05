@@ -24,13 +24,12 @@
           <a class="cart" href="">Корзина</a>
         </div>
         </nav>
+        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </header>
   <main class="page-catalog container">
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter">
-          <form method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item">
         <legend>Стоимость:</legend>
         <div class="range-filter">
@@ -95,19 +94,25 @@
           </li>
         </ul>
           </fieldset>
-        <h3 class="filter_subtitle">Сортировать:</h3>
-        <ul class="filter_list">
-            <li class="filter_item">По цене</li>
-            <li class="filter_item">По типу</li>
-            <li class="filter_item">По названию</li>
-        </ul>
-        <ul class="filter_list">
-            <li class="filter_item">По убыванию</li>
-            <li class="filter_item">По возрастанию</li>
-        </ul>
         </form>
-        </form>
-      </section>
+        <button class="button filter-button" type="submit">Показать</button>
+        </section>
+        <section class="sort">
+        <h3 class="to-sort">Сортировать:</h3>
+        <div class="sorting">
+        <ul class="sort-catalog-list">
+            <li class="sort-catalog-item"><a class="current-sort" href="">По цене</a></li>
+            <li class="sort-catalog-item"><a href="">По типу</a></li>
+            <li class="sort-catalog-item"><a href="">По названию</a></li>
+        </ul>
+        <div class="switching">
+          <ul class="switch_list">
+            <li class="switch_item"><button class="current-sort-arrow" type="button" aria-label="По убыванию"</button></li>
+            <li class="switch_item"><button class="current-sort-arrow" type="button" aria-label="По возрастанию"</button></li>
+        </ul>
+      </div>
+    </div>
+    </section>
      <section class="catalog">
         <h2 class="visually-hidden">Примеры работ</h2>
         <ul class="catalog-list">
