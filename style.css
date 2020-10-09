@@ -100,6 +100,7 @@
     "filters pagination pagination";
     grid-gap: 40px;
     margin-top: 55px;
+    margin-bottom: 60px;
   }
 
   .page-catalog .page-title {
@@ -366,7 +367,6 @@
   .index-columns {
     display: flex;
     justify-content: space-between;
-    
     background-position: center, 0 0;
     background-repeat: no-repeat, repeat;
     border-top: 2px solid #EEEEEE;
@@ -504,8 +504,7 @@
    grid-column-gap: 32px;
  }
 
- .clients-logo {
-     
+ .clients-logo { 
    opacity: 0.1;
  }
 
@@ -529,9 +528,9 @@
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
     position: absolute;
-    right: 17px;
-    top: 50px;
-    transform: translateY(-50px);
+    right: -17px;
+    top: 50%;
+    transform: translateY(-50%);
   }
  
 /* Button */
@@ -600,6 +599,7 @@
   .catalog {
     grid-area: catalog;
     min-width: 720px;
+    
   }
  
   .catalog-title {
@@ -619,6 +619,7 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;  
+    margin-top: 48px;
   }
 
   .catalog-item {
@@ -682,6 +683,7 @@
 
 .sort {
   grid-area: sorting;
+  margin-top: 38px;
 }
 
 .sorting {
@@ -689,6 +691,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .to-sort {
@@ -707,6 +710,7 @@
   justify-content: flex-end;
   list-style: none;
   text-transform: uppercase;
+  
 }
 
 .sort-catalog-item a {
@@ -754,12 +758,13 @@ list-style: none;
 .filters {
   width: 260px;
   grid-area: filters;
+  margin-top: 55px;
+  
 }
 
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
   border: none;
 }
 
@@ -770,21 +775,25 @@ list-style: none;
 .filter legend {
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .filter ul {
+  font-size: 16px;
   list-style: none;
   line-height: 19px;
   padding: 0;
-  margin: 0;
+  margin:0;
+  margin-bottom: 50px;
+  margin-right: 50px;
 }
 
 .filter-option {
   margin-bottom: 19px;
-  padding-left: 50px;
+  padding-left: 43px;
+  right: 5px;
 }
 
 .filter-option label {
@@ -792,6 +801,7 @@ list-style: none;
   display: block;
   cursor: pointer;
   user-select: none;
+  
 }
 
 .filter-input-checkbox:hover + label,
@@ -905,6 +915,7 @@ list-style: none;
 .range-controls .scale {
   height: 2px;
   background: #d7dcde;
+  
 }
 
 .range-controls .bar {
@@ -938,6 +949,7 @@ list-style: none;
 .price-controls {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .price-controls label {
@@ -965,11 +977,13 @@ list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: ". pg pg";
+  
 }
 
 .pagination {
   padding-bottom: 60px;
   grid-area: pg;
+  
 }
 
 .pagination-list {
@@ -978,6 +992,7 @@ list-style: none;
   list-style: none;
   margin: 0;
   padding: 0;  
+  
 }
 
 .pagination-item {
@@ -1053,7 +1068,7 @@ list-style: none;
     color: var(--basic-black);
     text-transform: uppercase;
     margin-top: 0;
-    
+    margin-bottom: 25px;
   }
 
   .contacts-address {
@@ -1095,8 +1110,8 @@ list-style: none;
   }
 
   .contacts-phone {
-   
    font-size: 16px;
+   
   }
   
   .footer-button {
@@ -1113,6 +1128,7 @@ list-style: none;
     background-color: var(--basic-coral);
     border: none;
     width: 160px;
+    padding-bottom: 15px;
   }
 
   .footer-contacts a:hover,
@@ -1150,7 +1166,7 @@ list-style: none;
   }
   
   .container .last-footer {
-    padding-top: 51px;
+    padding-top: 40px;
   }
   
   /* Social button */
