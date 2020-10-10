@@ -730,6 +730,7 @@ opacity: 0.3;
 list-style: none;
 display: grid;
 grid-template-columns: 1fr 1fr;
+grid-column-gap: 18px;
 }
 
 .current-sort-arrow { 
@@ -742,7 +743,7 @@ grid-template-columns: 1fr 1fr;
 
 .current-sort-arrow:active,
 .current-sort-arrow:focus {
-  opacity: 1;
+  fill: #231F20;
  }
 
 /*
@@ -786,13 +787,13 @@ grid-template-columns: 1fr 1fr;
   width: 260px;
   grid-area: filters;
   margin-top: 55px;
-  
 }
 
 .filter fieldset {
   padding: 0;
   margin: 0;
   border: none;
+  
 }
 
 .filter fieldset:first-child {
