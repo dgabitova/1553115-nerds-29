@@ -634,7 +634,13 @@
     height: 40px;
     top: 0px;
     background-image: url("img/browser.svg");
+    border-radius: 3px;
   }
+
+.catalog-item:hover {
+  background-image: url("img/browser-hover.png");
+  border-radius: 3px;
+}
 
   .catalog-item-image {
     position: relative;
@@ -643,6 +649,10 @@
     margin: 0; 
   }
 
+  .catalog-item-img {
+    padding-top: 40px;
+    border-radius: 5px;
+  }
 
   .catalog-item a {
     color: var(--basic-black);
@@ -669,6 +679,68 @@
 .catalog-item-price .button {
   line-height: 50px;
   color: var(--basic-coral);
+}
+
+.product-card-item-text {
+  box-sizing: border-box;
+  color: var(--basic-neutral);
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0 52px 0 53px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.product-card-item-link h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.buy {
+  border-radius: 3px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--basic-coral);
+  color: var(--basic-white);
+  margin-bottom: 44px;
+  padding: 0;
+  border: 0;
+}
+
+.buy:hover {
+  background-color:#E74246;
+}
+
+.buy:focus {
+  background-color: #D7373B;
+}
+
+.product-card-info {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.catalog-item:hover .product-card-info {
+  height: 231px;
+  width: 360px;
+  margin: 0;
+  clip: auto;
+  position: absolute;
+  bottom: -1px;
+  background-color: var(--basic-gray);
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
 }
 
 /* Sort */
@@ -797,7 +869,7 @@ grid-column-gap: 18px;
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 35px;
+  margin-bottom: 51px;
 }
 
 .filter legend {
@@ -832,6 +904,44 @@ grid-column-gap: 18px;
   
 }
 
+.filter-input-checkbox+label::before{
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  left: -36px;
+  background-image: url(img/checkbox-off.png);
+  opacity: 0.4; 
+}
+
+.filter-input-checkbox:checked+label::before{
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  left: -36px;
+  background-image: url(img/checkbox-shape.png);
+  opacity: 0.4; 
+}
+
+.filter-input-checkbox:checked+label::after{
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 17px;
+  top: 2px;
+  left: -32px;
+  background-image: url(img/checkbox-shapeon.png);
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:hover+label::before, .filter-input-checkbox:hover+label::after{
+  opacity: 1;
+}
+
+/*
 .filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
   color: #4d4d4d;
@@ -860,6 +970,8 @@ grid-column-gap: 18px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+*/
 
 .filter-input-radio + label::before {
   content: "";
@@ -919,7 +1031,7 @@ grid-column-gap: 18px;
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 35px;
 }
 
 .filter-item legend {
@@ -941,6 +1053,7 @@ grid-column-gap: 18px;
 }
 
 .range-controls .scale {
+  width: 70%;
   height: 2px;
   background: #d7dcde;
   
