@@ -1,21 +1,3 @@
-<svg width="368" height="48" viewBox="0 0 368 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_dd)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8 0H360C362.2 0 364 1.8 364 4V40H4V4C4 1.8 5.8 0 8 0ZM20.9288 23.5C22.1792 25.6658 24.4901 27 26.991 27C30.857 27 33.991 23.866 33.991 20C33.991 16.134 30.857 13 26.991 13C24.4901 13 22.1792 14.3342 20.9288 16.5C19.6784 18.6658 19.6784 21.3342 20.9288 23.5ZM50.002 27C47.5011 27 45.1902 25.6658 43.9398 23.5C42.6893 21.3342 42.6893 18.6658 43.9398 16.5C45.1902 14.3342 47.5011 13 50.002 13C53.8679 13 57.002 16.134 57.002 20C57.002 23.866 53.8679 27 50.002 27ZM66.9505 23.5C68.201 25.6658 70.5118 27 73.0127 27C76.8787 27 80.0127 23.866 80.0127 20C80.0127 16.134 76.8787 13 73.0127 13C70.5118 13 68.201 14.3342 66.9505 16.5C65.7001 18.6658 65.7001 21.3342 66.9505 23.5Z" fill="#4D4D4D"/>
-</g>
-<defs>
-<filter id="filter0_dd" x="0" y="0" width="368" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
-</filter>
-</defs>
+<svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
 </svg>

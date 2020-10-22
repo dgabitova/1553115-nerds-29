@@ -834,6 +834,12 @@ list-style: none;
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-column-gap: 18px;
+padding-left: 22px;
+}
+
+.sort-catalog-item .current-sort {
+  color: var(--basic-black);
+  opacity: 1;
 }
 
 .current-sort-arrow { 
@@ -1089,7 +1095,7 @@ grid-column-gap: 18px;
 }
 
 .pagination-item {
-  margin-right: 3px;
+  margin-right: 10px;
   font-weight: 500;
   font-size: 16px;
   
@@ -1111,7 +1117,7 @@ grid-column-gap: 18px;
   padding: 13px 21px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
-  margin-right: 7px;
+  margin-right: 0;
   border-radius: 3px;
 }
 
