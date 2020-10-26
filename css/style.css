@@ -1148,6 +1148,7 @@
     width: 1160px;
     margin: 0 auto;
     padding: 0 10px;
+    pointer-events: none;
   }
 
   .contacts-title {
@@ -1197,6 +1198,7 @@
   .contact-us {
     background: var(--basic-white);
     padding: 49px 50px 47px;
+    pointer-events: auto;
   }
 
   .footer-phone {

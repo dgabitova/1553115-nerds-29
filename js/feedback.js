@@ -1,5 +1,5 @@
 const modalOpen = document.querySelector(".footer-button");
-const modal = document.querySelector(".modal-feedback");
+const modal = document.querySelector(".modal");
 const modalClose = document.querySelector(".button-close");
 const modalForm = document.querySelector(".feedback-form");
 const modalName = document.querySelector(".form-input-name");
