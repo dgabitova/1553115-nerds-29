@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700;display=swap" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -256,34 +256,35 @@
 </footer>
 <section class="modal modal-feedback">
   <h2>Напишите нам</h2>
-  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-    <ul>
-      <li class="feedback-form-item">
-       <label for="name">Ваше имя:</label>
-       <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-      </li>
-      <li>
-        <label for="email">Ваш email:</label>
-        <input type="text" id="email" name="email" placeholder="email@example.com ">
-      </li>
-      <li>
-        <label for="msg">Текст письма:</label>
-        <textarea id="msg" name="msg" placeholder="В свободной форме"></textarea>
-      </li>
-      <li>
-        <button class="button feedback-submit" type="submit">Отправить</button>
-      </li>
-      <li>
-        <button class="button-close" type="button"></button>
-      </li>
-    </ul>
-  </form>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <ul>
+        <li class="feedback-form-item">
+         <label for="name">Ваше имя:</label>
+         <input class="form-input-write-us form-input-name" type="text" id="name" name="name" placeholder="Имя Фамилия">
+        </li>
+        <li>
+          <label for="email">Ваш email:</label>
+          <input class="form-input-write-us form-input-email" type="text" id="email" name="email" placeholder="email@example.com ">
+        </li>
+        <li>
+          <label for="msg">Текст письма:</label>
+          <textarea class="textarea-write-us" id="msg" name="msg" placeholder="В свободной форме"></textarea>
+        </li>
+        <li>
+          <button class="button feedback-submit" type="submit">Отправить</button>
+        </li>
+        <li>
+          <button class="button-close" type="button"></button>
+        </li>
+      </ul>
+    </form>
 </section>
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как нас найти</h2>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616211245!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1601963604004!5m2!1sru!2sru" allowfullscreen title="Изображение карты с адресом ул.Б.Конюшенная д.19/8" width="1440" height="416"></iframe>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
+<script src="js/feedback.js"></script>
 </body>
 </html>
 
