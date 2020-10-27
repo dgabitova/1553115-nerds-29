@@ -1,3 +1,27 @@
+//Slider
+const slides = document.querySelectorAll(".slide");
+const sliderBtns = document.querySelectorAll(".slider-controls button");
+
+for (const sliderBtn of sliderBtns) {
+	sliderBtn.addEventListener("click", function (evt) {
+		for (const slide of slides) {
+			if (slide.id === evt.target.getAttribute("aria-controls")) {
+				slide.classList.add("slide-current");
+				for (const sliderBtn of sliderBtns) {
+					if (sliderBtn == evt.target) {
+						sliderBtn.classList.add("current");
+					} else {
+						sliderBtn.classList.remove("current");
+					}
+				}
+			} else {
+				slide.classList.remove("slide-current");
+			}
+		}
+	});
+}
+
+//Modal
 const modalOpen = document.querySelector(".footer-button");
 const modal = document.querySelector(".modal");
 const modalClose = document.querySelector(".button-close");
@@ -11,13 +35,13 @@ const storageEmail = localStorage.getItem("email");
 let isStorageSupport = true;
 let storage = "";
 try {
-  storage = localStorage.getItem("login");
+	storage = localStorage.getItem("login");
 } catch (err) {
-  isStorageSupport = false;
+	isStorageSupport = false;
 }
 
 modalOpen.addEventListener("click", function (evt) {
-	evt.preventDefault();	
+	evt.preventDefault();
 	modal.classList.add("modal-feedback-show");
 	if (storageName) {
 		modalName.value = storageName;
@@ -28,7 +52,7 @@ modalOpen.addEventListener("click", function (evt) {
 	if (storageEmail) {
 		modalEmail.value = storageEmail;
 		modalTextarea.focus();
-	}	else {
+	} else {
 		modalEmail.focus();
 	}
 });
@@ -62,13 +86,13 @@ modalForm.addEventListener("submit", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (modal.classList.contains("modal-feedback-show")) {
-      evt.preventDefault();
-      modal.classList.remove("modal-feedback-show");
-      modalName.classList.remove("modal-feedback-error");
+	if (evt.keyCode === 27) {
+		if (modal.classList.contains("modal-feedback-show")) {
+			evt.preventDefault();
+			modal.classList.remove("modal-feedback-show");
+			modalName.classList.remove("modal-feedback-error");
 			modalEmail.classList.remove("modal-feedback-error");
 			modalTextarea.classList.remove("modal-feedback-error");
-    }
-  }
+		}
+	}
 });
